@@ -1,0 +1,303 @@
+<!doctype html>
+<html lang='en'>
+  <head>
+    <title>A Short Introduction To Using The (bash) Shell</title>
+    <meta charset='UTF-8'>
+    <!-- init viewport: -->
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no'>
+    <!-- styles: -->
+    <link rel='stylesheet' href='css/reveal.css'>
+    <link rel='stylesheet' href='css/theme/black.css' id='theme'>
+    <link rel='stylesheet' href='css/custom.css'>
+    <!-- java scripts: -->
+    <script src='lib/js/head.min.js' charset='utf-8'></script>
+    <script src='js/reveal.js' charset='utf-8'></script>
+    <script src='js/init.js' charset='utf-8' defer></script>
+  </head>
+  <body id='body'>
+    <!-- begin reveal.js container div: -->
+    <div class='reveal'>
+      <!-- begin slide container div: -->
+      <div class='slides'>
+
+        <!-- begin slide 01: -->
+        <section>
+          <span class='fragment'>
+            <h3>A Short Introduction To Using The (bash) Shell</h3>
+          </span>
+        <!-- end slide 01: -->
+        </section>
+
+        <!-- begin slide 02: -->
+        <section>
+          <h2><code>pwd</code></h2>
+          <span class='fragment'>
+            Prints the <span class='custom-hl_text'>p</span>ath to the current <span class='custom-hl_text'>w</span>orking <span class='custom-hl_text'>d</span>irectory
+          </span>
+          <span class='fragment'>
+            <img class='custom-terminal_img' src='img/00-pwd.gif'>
+          </span>
+        <!-- end slide 02: -->
+        </section>
+
+        <!-- begin slide 03: -->
+        <section>
+          <h2><code>ls</code></h2>
+          <span class='fragment'>
+            List files and their properties
+          </span>
+          <span class='fragment'>
+            <img class='custom-terminal_img' src='img/01-ls.gif'>
+          </span>
+        <!-- end slide 03: -->
+        </section>
+
+        <!-- begin slide 04: -->
+        <section>
+          <h2><code>ls -l</code></h2>
+          <span class='fragment'>
+            Long listing
+          </span>
+          <span class='fragment'>
+            <img class='custom-terminal_img' src='img/02-ls_l.gif'>
+          </span>
+        <!-- end slide 04: -->
+        </section>
+
+        <!-- begin slide 05: -->
+        <section>
+          <h2><code>ls -lh</code></h2>
+          <span class='fragment'>
+            Long listing with human readable file sizes
+          </span>
+          <span class='fragment'>
+            <img class='custom-terminal_img' src='img/03-ls_lh.gif'>
+          </span>
+        <!-- end slide 05: -->
+        </section>
+
+        <!-- begin slide 06: -->
+        <section>
+          <h2><code>ls -a</code></h2>
+          <span class='fragment'>
+            List all files
+          </span>
+          <span class='fragment'>
+            <img class='custom-terminal_img' src='img/04-ls_a.gif'>
+          </span>
+        <!-- end slide 06: -->
+        </section>
+
+        <!-- begin slide 07: -->
+        <section>
+          <h2><code>cd</code></h2>
+          <span class='fragment'>
+            <span class='custom-hl_text'>C</span>hange <span class='custom-hl_text'>d</span>irectory
+          </span>
+          <span class='fragment'>
+            <img class='custom-terminal_img' src='img/05-cd.gif'>
+          </span>
+        <!-- end slide 07: -->
+        </section>
+
+        <!-- begin slide 08: -->
+        <section>
+          <h2><code>cd</code></h2>
+          <span class='fragment'>
+            With no arguments will return to the home directory
+          </span>
+          <span class='fragment'>
+            <img class='custom-terminal_img' src='img/06-cd_home.gif'>
+          </span>
+        <!-- end slide 08: -->
+        </section>
+
+        <!-- begin slide 09: -->
+        <section>
+          <h2><code>mkdir</code></h2>
+          <span class='fragment'>
+            <span class='custom-hl_text'>M</span>a<span class='custom-hl_text'>k</span>e <span class='custom-hl_text'>dir</span>ectories
+          </span>
+          <span class='fragment'>
+            <img class='custom-terminal_img' src='img/07-mkdir.gif'>
+          </span>
+        <!-- end slide 09: -->
+        </section>
+
+        <!-- begin slide 10: -->
+        <section>
+          <h2><code>cp</code></h2>
+          <span class='fragment'>
+            <span class='custom-hl_text'>C</span>o<span class='custom-hl_text'>p</span>y files and directories
+          </span>
+          <span class='fragment'>
+            <img class='custom-terminal_img' src='img/08-cp.gif'>
+          </span>
+        <!-- end slide 10: -->
+        </section>
+
+        <!-- begin slide 11: -->
+        <section>
+          <h2><code>cp -r</code></h2>
+          <span class='fragment'>
+            Copy files recursively
+          </span>
+          <span class='fragment'>
+            <img class='custom-terminal_img' src='img/09-cp_r.gif'>
+          </span>
+        <!-- end slide 11: -->
+        </section>
+
+        <!-- begin slide 12: -->
+        <section>
+          <h2><code>mv</code></h2>
+          <span class='fragment'>
+            <span class='custom-hl_text'>M</span>o<span class='custom-hl_text'>v</span>e files and directories
+          </span>
+          <span class='fragment'>
+            <img class='custom-terminal_img' src='img/10-mv.gif'>
+          </span>
+        <!-- end slide 12: -->
+        </section>
+
+        <!-- begin slide 13: -->
+        <section>
+          <h2><code>rm</code></h2>
+          <span class='fragment'>
+            <span class='custom-hl_text'>R</span>e<span class='custom-hl_text'>m</span>ove files and directories
+          </span>
+          <span class='fragment'>
+            <img class='custom-terminal_img' src='img/11-rm.gif'>
+          </span>
+        <!-- end slide 13: -->
+        </section>
+
+        <!-- begin slide 14: -->
+        <section>
+          <h2><code>rm -i</code></h2>
+          <span class='fragment'>
+            Prompt for confirmation before file removal
+          </span>
+          <span class='fragment'>
+            <img class='custom-terminal_img' src='img/12-rm_i.gif'>
+          </span>
+        <!-- end slide 14: -->
+        </section>
+
+        <!-- begin slide 15: -->
+        <section>
+          <h2><code>rm -fr</code></h2>
+          <span class='fragment'>
+            Forcibly remove files recursively
+          </span>
+          <span class='fragment'>
+            <img class='custom-terminal_img' src='img/13-rm_fr.gif'>
+          </span>
+        <!-- end slide 15: -->
+        </section>
+
+        <!-- begin slide 16: -->
+        <section>
+          <h2><code>rmdir</code></h2>
+          <span class='fragment'>
+            <span class='custom-hl_text'>R</span>e<span class='custom-hl_text'>m</span>ove empty <span class='custom-hl_text'>dir</span>ectories
+          </span>
+          <span class='fragment'>
+            <img class='custom-terminal_img' src='img/14-rmdir.gif'>
+          </span>
+        <!-- end slide 16: -->
+        </section>
+
+        <!-- begin slide 17: -->
+        <section>
+          <h2><code>*</code></h2>
+          <span class='fragment'>
+            Matches any character
+          </span>
+          <span class='fragment'>
+            <img class='custom-terminal_img' src='img/15-asterisk.gif'>
+          </span>
+        <!-- end slide 17: -->
+        </section>
+
+        <!-- begin slide 18: -->
+        <section>
+          <h2><code>&nbsp;</code></h2>
+          <span>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          </span>
+          <span>
+            <img class='custom-terminal_img' src='img/16-rm_asterisk.gif'>
+          </span>
+        <!-- end slide 18: -->
+        </section>
+
+        <!-- begin slide 19: -->
+        <section>
+          <h2><code>less</code></h2>
+          <span class='fragment'>
+            View the content of a file
+          </span>
+          <span class='fragment'>
+            <img class='custom-terminal_img' src='img/17-less.gif'>
+          </span>
+        <!-- end slide 19: -->
+        </section>
+
+        <!-- begin slide 20: -->
+        <section>
+          <h2><code>man</code></h2>
+          <span class='fragment'>
+            Access the <span class='custom-hl_text'>man</span>ual pages for a command
+          </span>
+          <span class='fragment'>
+            <img class='custom-terminal_img' src='img/18-man.gif'>
+          </span>
+        <!-- end slide 20: -->
+        </section>
+
+        <!-- begin slide 21: -->
+        <section>
+          <h2>Recap</h2>
+          <span class='fragment'>
+            <ul>
+              <li><code>pwd</code> : Prints the path to the current working directory</li>
+              <li><code>ls</code> : List files and their properties</li>
+              <li><code>cd</code> : Change directory</li>
+              <li><code>mkdir</code> : Make directories</li>
+              <li><code>cp</code> : Copy files and directories</li>
+              <li><code>mv</code> : Move files and directories</li>
+            </ul>
+          </span>
+        <!-- end slide 21: -->
+        </section>
+
+        <!-- begin slide 22: -->
+        <section>
+          <h2>&nbsp;</h2>
+          <span>
+            <ul>
+              <li><code>rm</code> : Remove files and directories</li>
+              <li><code>rmdir</code> : Remove empty directories</li>
+              <li><code>*</code> : Matches any character</li>
+              <li><code>less</code> : View the content of a file</li>
+              <li><code>man</code> : Access the manual pages for a command</li>
+            </ul>
+          </span>
+        <!-- end slide 22: -->
+        </section>
+
+        <!-- begin slide 23: -->
+        <section>
+          <h2></h2>
+          <span>
+          </span>
+        <!-- end slide 23: -->
+        </section>
+
+      <!-- end slide container div: -->
+      </div>
+    <!-- end reveal.js container div: -->
+    </div>
+  </body>
+</html>

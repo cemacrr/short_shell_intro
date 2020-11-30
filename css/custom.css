@@ -1,0 +1,17 @@
+
+/* highlighted text: */
+#body .custom-hl_text {
+  color:       #33ff33;
+  font-weight: 900;
+}
+
+/* terminal image: */
+#body .custom-terminal_img {
+  border: 0px;
+  border-radius: 10px;
+}
+
+/* code: */
+#body code {
+  color: #33ff33;
+}
